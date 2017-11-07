@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_register"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="2dp"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/profile_layout"
+                        android:layout_margin="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="Ubah Profil"/>
+
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/colorPrimaryDark"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_layout_name"
+                            android:theme="@style/EditText">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/input_name"
+                                android:textSize="14sp"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:hint="@string/hint_name"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_layout_address"
+                            android:theme="@style/EditText">
+
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/input_address"
+                                android:textSize="14sp"
+                                android:inputType="textMultiLine"
+                                android:hint="@string/hint_address"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_layout_address_note"
+                            android:theme="@style/EditText">
+
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/input_address_note"
+                                android:textSize="14sp"
+                                android:inputType="textMultiLine"
+                                android:hint="@string/hint_address_note"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_layout_phone"
+                            android:theme="@style/EditText">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/input_phone"
+                                android:textSize="14sp"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:hint="@string/hint_phone"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/save_btn"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/save_button"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/round_button"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

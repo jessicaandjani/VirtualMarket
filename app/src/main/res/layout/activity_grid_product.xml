@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductListActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_normal"
+        android:hint="Cari Produk..."
+        android:inputType="text"
+        android:imeOptions="actionSearch"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_grid"
+        android:layout_below="@+id/search"
+        android:layout_margin="4dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        android:gravity="center" />
+</RelativeLayout>

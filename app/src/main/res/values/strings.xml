@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Fresh Market</string>
+    <!-- Title -->
+    <string name="shoppinglist_title">Daftar Pesanan</string>
+    <string name="quantity_title">Kuantitas Pesanan</string>
+
+    <!-- Information -->
+    <string name="priority_info">Berikan bintang untuk barang prioritas</string>
+    <string name="detail_priority_info">Barang prioritas merupakan barang yang dirasa sangat penting oleh Anda.
+        Jika barang prioritas tidak tersedia, sistem akan membatalkan pesanan Anda secara otomatis.</string>
+    <string name="not_available_status">Tidak Ada Status Pesanan Saat Ini</string>
+    <string name="not_available_cart">Keranjang Belanja Anda Kosong</string>
+    <string name="not_available_feedback">Tidak Ada Ulasan</string>
+
+    <!-- Form -->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_address">Alamat</string>
+    <string name="hint_address_note">Catatan Alamat</string>
+    <string name="hint_phone">Nomor Telepon</string>
+    <string name="err_msg_name">Nama Lengkap harus diisi</string>
+    <string name="err_msg_address">Alamat harus diisi</string>
+    <string name="err_msg_phone">Nomor Telepon harus diisi</string>
+    <string name="err_msg_quantity">Kuantitas Barang harus diisi</string>
+    <string name="err_msq_valid_gram">Kuantitas Barang harus Diantara 100-5000 gram</string>
+    <string name="err_msq_valid_kilogram">Kuantitas Barang harus Diantara 1-5 kilogram</string>
+    <string name="err_msq_valid_ons">Kuantitas Barang harus Diantara 1-50 ons</string>
+    <string name="err_msg_username">Username harus diisi</string>
+    <string name="err_msg_password">Password harus diisi</string>
+
+    <!-- Dropdown -->
+    <string-array name="mass_array">
+        <item>kilogram</item>
+        <item>gram</item>
+        <item>ons</item>
+        <item>ikat</item>
+        <item>buah</item>
+    </string-array>
+
+    <!-- Checkbox -->
+    <string name="reason_1">Waktu pengiriman yang lama</string>
+    <string name="reason_2">Kualitas barang tidak baik</string>
+    <string name="reason_3">Garendong tidak ramah</string>
+
+    <!-- Button -->
+    <string name="shop_button">Tambah</string>
+    <string name="checkout_button">Lanjut</string>
+    <string name="order_confirm_button">Pesan</string>
+    <string name="edit_button">Ubah</string>
+    <string name="delete_button">Hapus</string>
+    <string name="back_button">Kembali</string>
+    <string name="send_button">Kirim</string>
+    <string name="save_button">Simpan</string>
+    <string name="feedback_button">Berikan Ulasan</string>
+    <string name="login_button">Masuk</string>
+    <string name="register_button">Registrasi</string>
+    <string name="orderlist_button">Daftar Pesanan</string>
+
+    <!-- Search -->
+    <string name="app_label">Virtual Market</string>
+    <string name="search_hint">Cari Produk...</string>
+
+    <!-- Drawer Layout -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_profile">Profil Diri</string>
+    <string name="nav_feedback">Ulasan</string>
+    <string name="nav_login">Masuk</string>
+    <string name="nav_logout">Keluar</string>
+
+</resources>

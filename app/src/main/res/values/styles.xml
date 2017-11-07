@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Toolbar Text -->
+    <style name="ToolbarTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowColor">?colorAccent</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Toolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <!-- Transparent Toolbar -->
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+        <!--For compatibility-->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Action Button -->
+    <style name="ActionButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentLime</item>
+        <item name="colorButtonNormal">@color/colorAccentLime</item>
+    </style>
+
+    <!-- Rating Bar -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Spinner Theme -->
+    <style name="SpinnerTheme">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">@color/divider</item>
+    </style>
+
+    <!--Floating Label Text -->
+    <style name="Label" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <!-- Input Field -->
+    <style name="EditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/secondaryText</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/secondaryText</item>
+    </style>
+
+    <!-- Error Label Text -->
+    <style name="ErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/errorText</item>
+    </style>
+
+    <!-- Checkbox -->
+    <style name="Checkbox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

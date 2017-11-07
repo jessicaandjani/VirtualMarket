@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appsname">
+    <!-- Volley -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Application -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDOI_8vtiOKV3ir2b2vs-ztkC1IN72NXpY"/>
+        <!-- Activity -->
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProductListActivity" android:screenOrientation="portrait"
+                  android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SearchActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SearchActivity" />
+        </activity>
+        <activity android:name=".ProductActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".ProductListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductListActivity" />
+        </activity>
+        <activity android:name=".ShoppingListActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShoppingListActivity" />
+        </activity>
+        <activity android:name=".CheckOutActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".ShoppingListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CheckOutActivity" />
+        </activity>
+        <activity android:name=".FeedbackHistoryActivity" android:noHistory="true" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FeedbackHistoryActivity" />
+        </activity>
+        <activity android:name=".FeedbackActivity" android:noHistory="true" android:screenOrientation="portrait"
+            android:parentActivityName=".FeedbackHistoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FeedbackActivity" />
+        </activity>
+        <activity android:name=".LoginActivity" android:noHistory="true" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity android:name=".RegisterActivity" android:noHistory="true" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegisterActivity" />
+        </activity>
+        <activity android:name=".ProfileActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProfileActivity" />
+        </activity>
+    </application>
+
+</manifest>
